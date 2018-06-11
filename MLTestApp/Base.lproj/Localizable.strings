@@ -1,0 +1,21 @@
+/* 
+  Localizable.strings
+  MLTestApp
+
+  Created by Rhonny Gonzalez on 11/6/18.
+  Copyright © 2018 Rhonny Gonzalez. All rights reserved.
+*/
+"Amount" = "Monto";
+"Type an Amount between 1 and %@" = "Escribe un monto entre 1 y %@";
+"Payment Methods" = "Métodos de Pago";
+"Select a payment method from the below list." = "Selecciona un método de pago de la lista inferior.";
+"Card Issuers" = "Emisores de Tarjeta";
+"Select a card issuer relative to your selected payment method from the below list." = "Selecciona un emisor de la tarjeta de acuerdo a tu método de la lista inferior.";
+"Installments" = "Cuotas";
+"Select an installment option from the below list." = "Selecciona una cuota de la lista inferior";
+"Amount: %@\nPayment Method: %@\nCard Issuer: %@\nInstallment Option: %@" = "Monto: %@\nMétodo de Pago: %@\nEmisor de Terjeta: %@\nOpción de cuotas: %@";
+"Succesful" = "Éxito";
+"Alert" = "Alerta";
+"You must type a valid amount." = "Debes ingresar un monto válido";
+"Loading" = "Cargando";
+"There is no data available" = "No hay datos disponibles";

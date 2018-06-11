@@ -1,0 +1,21 @@
+/* 
+  Localizable.strings
+  MLTestApp
+
+  Created by Rhonny Gonzalez on 11/6/18.
+  Copyright © 2018 Rhonny Gonzalez. All rights reserved.
+*/
+"Amount" = "Amount";
+"Type an Amount between 1 and %@" = "Type an Amount between 1 and %@";
+"Payment Methods" = "Payment Methods";
+"Select a payment method from the below list." = "Select a payment method from the below list.";
+"Card Issuers" = "Card Issuers";
+"Select a card issuer relative to your selected payment method from the below list." = "Select a card issuer relative to your selected payment method from the below list.";
+"Installments" = "Installments";
+"Select an installment option from the below list." = "Select an installment option from the below list.";
+"Amount: %@\nPayment Method: %@\nCard Issuer: %@\nInstallment Option: %@" = "Amount: %@\nPayment Method: %@\nCard Issuer: %@\nInstallment Option: %@";
+"Succesful" = "Succesful";
+"Alert" = "Alert";
+"You must type a valid amount." = "You must type a valid amount.";
+"Loading" = "Loading";
+"There is no data available" = "There is no data available";

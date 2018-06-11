@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yjG-ga-7DQ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Card Issuers-->
+        <scene sceneID="bqx-mY-c0o">
+            <objects>
+                <viewController storyboardIdentifier="CardIssuersVC" id="yjG-ga-7DQ" customClass="CardIssuersVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Rj1-2P-jhK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select a card issuer from the above list." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="zSO-EK-iSl">
+                                <rect key="frame" x="20" y="74" width="335" height="20"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="OoK-QP-zks">
+                                <rect key="frame" x="10" y="104" width="355" height="563"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Pm1-Bc-onZ">
+                                    <size key="itemSize" width="170" height="170"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="CardIssuersCell" id="MVK-g6-Aqj">
+                                        <rect key="frame" x="86.5" y="0.0" width="182" height="179"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="182" height="179"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" tag="1" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yD5-sF-g8m">
+                                                    <rect key="frame" x="10" y="0.0" width="162" height="128"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Proverenced" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="7" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="J4r-Uy-GcX">
+                                                    <rect key="frame" x="10" y="138" width="162" height="41"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="41" id="SbZ-b9-gQS"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <color key="backgroundColor" red="0.77647058823529413" green="0.9137254901960784" blue="0.98039215686274506" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="J4r-Uy-GcX" secondAttribute="bottom" id="7nD-Dq-KS6"/>
+                                            <constraint firstAttribute="trailing" secondItem="J4r-Uy-GcX" secondAttribute="trailing" constant="10" id="hLw-Vn-0zL"/>
+                                            <constraint firstItem="yD5-sF-g8m" firstAttribute="top" secondItem="MVK-g6-Aqj" secondAttribute="top" id="hrq-Nz-J6G"/>
+                                            <constraint firstItem="J4r-Uy-GcX" firstAttribute="leading" secondItem="MVK-g6-Aqj" secondAttribute="leading" constant="10" id="i67-fi-r44"/>
+                                            <constraint firstItem="yD5-sF-g8m" firstAttribute="leading" secondItem="MVK-g6-Aqj" secondAttribute="leading" constant="10" id="pCt-bb-h4X"/>
+                                            <constraint firstAttribute="trailing" secondItem="yD5-sF-g8m" secondAttribute="trailing" constant="10" id="rdN-8Z-m45"/>
+                                            <constraint firstItem="J4r-Uy-GcX" firstAttribute="top" secondItem="yD5-sF-g8m" secondAttribute="bottom" constant="10" id="v9q-qk-WT9"/>
+                                        </constraints>
+                                        <size key="customSize" width="182" height="179"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                                <color key="value" red="0.1764705882352941" green="0.19607843137254902" blue="0.46666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="XxQ-fH-CcJ" firstAttribute="trailing" secondItem="zSO-EK-iSl" secondAttribute="trailing" constant="20" id="2Ew-Sw-n9H"/>
+                            <constraint firstItem="OoK-QP-zks" firstAttribute="top" secondItem="zSO-EK-iSl" secondAttribute="bottom" constant="10" id="Odf-xY-4Za"/>
+                            <constraint firstItem="zSO-EK-iSl" firstAttribute="top" secondItem="XxQ-fH-CcJ" secondAttribute="top" constant="10" id="Qym-PI-9SD"/>
+                            <constraint firstItem="OoK-QP-zks" firstAttribute="leading" secondItem="XxQ-fH-CcJ" secondAttribute="leading" constant="10" id="T9I-wY-Zyc"/>
+                            <constraint firstItem="zSO-EK-iSl" firstAttribute="leading" secondItem="XxQ-fH-CcJ" secondAttribute="leading" constant="20" id="jhg-hd-vay"/>
+                            <constraint firstItem="XxQ-fH-CcJ" firstAttribute="trailing" secondItem="OoK-QP-zks" secondAttribute="trailing" constant="10" id="lHz-hw-cde"/>
+                            <constraint firstItem="OoK-QP-zks" firstAttribute="bottom" secondItem="XxQ-fH-CcJ" secondAttribute="bottom" id="wjb-G9-lkJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="XxQ-fH-CcJ"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Card Issuers" id="nsZ-ND-NAh">
+                        <barButtonItem key="backBarButtonItem" title=" " id="ogr-Io-5l1"/>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="cardIssuersCV" destination="OoK-QP-zks" id="pNA-h4-lhC"/>
+                        <outlet property="cardIssuersLabel" destination="zSO-EK-iSl" id="06g-eY-KGk"/>
+                        <segue destination="xPG-Va-yDp" kind="show" identifier="SegueInstallments" id="Yfn-7r-5Kn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ei7-fW-GUw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-39.200000000000003" y="95.802098950524751"/>
+        </scene>
+        <!--InstallmentsVC-->
+        <scene sceneID="FyD-xN-eCt">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Installments" referencedIdentifier="InstallmentsVC" id="xPG-Va-yDp" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qYY-gF-j5E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="470" y="95"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JoZ-VZ-CMW">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Payment Methods-->
+        <scene sceneID="Cu5-SB-fBj">
+            <objects>
+                <viewController storyboardIdentifier="PaymentMethodsVC" id="JoZ-VZ-CMW" customClass="PaymentMethodsVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7He-yK-7nC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="elP-NM-HyG">
+                                <rect key="frame" x="20" y="74" width="335" height="0.0"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wNh-f9-kl7">
+                                <rect key="frame" x="0.0" y="84" width="375" height="583"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PaymentMethodsCell" rowHeight="55" id="uMg-fa-u2y">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="55"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uMg-fa-u2y" id="ifh-Rs-M9S">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="55"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rL9-9y-hAi">
+                                                    <rect key="frame" x="15" y="8" width="50" height="38.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="50" id="yvS-wn-bfC"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="ptN-BN-zXT">
+                                                    <rect key="frame" x="75" y="17" width="285" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bvr-WE-0Ek">
+                                                    <rect key="frame" x="33" y="54" width="342" height="1"/>
+                                                    <color key="backgroundColor" red="0.1764705882" green="0.1960784314" blue="0.46666666670000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1" id="uac-0C-Wwr"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="rL9-9y-hAi" firstAttribute="leading" secondItem="ifh-Rs-M9S" secondAttribute="leading" constant="15" id="27O-gF-lUu"/>
+                                                <constraint firstAttribute="bottom" secondItem="rL9-9y-hAi" secondAttribute="bottom" constant="8" id="Mru-bm-xin"/>
+                                                <constraint firstItem="ptN-BN-zXT" firstAttribute="leading" secondItem="rL9-9y-hAi" secondAttribute="trailing" constant="10" id="Rfi-Cf-ePQ"/>
+                                                <constraint firstItem="ptN-BN-zXT" firstAttribute="centerY" secondItem="rL9-9y-hAi" secondAttribute="centerY" id="eaC-Dr-ZzK"/>
+                                                <constraint firstAttribute="trailing" secondItem="Bvr-WE-0Ek" secondAttribute="trailing" id="gZR-QS-Uev"/>
+                                                <constraint firstItem="Bvr-WE-0Ek" firstAttribute="leading" secondItem="ifh-Rs-M9S" secondAttribute="leading" constant="33" id="mWD-L9-tbp"/>
+                                                <constraint firstAttribute="bottom" secondItem="Bvr-WE-0Ek" secondAttribute="bottom" id="qfd-vj-D2g"/>
+                                                <constraint firstItem="rL9-9y-hAi" firstAttribute="top" secondItem="ifh-Rs-M9S" secondAttribute="top" constant="8" id="vJ5-xi-StK"/>
+                                                <constraint firstAttribute="trailing" secondItem="ptN-BN-zXT" secondAttribute="trailing" constant="15" id="weB-HO-e0a"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="elP-NM-HyG" firstAttribute="top" secondItem="3IQ-tP-e6n" secondAttribute="top" constant="10" id="9sg-2E-b7Y"/>
+                            <constraint firstItem="elP-NM-HyG" firstAttribute="leading" secondItem="3IQ-tP-e6n" secondAttribute="leading" constant="20" id="H0D-a7-aG5"/>
+                            <constraint firstItem="wNh-f9-kl7" firstAttribute="leading" secondItem="3IQ-tP-e6n" secondAttribute="leading" id="a6K-TY-bqf"/>
+                            <constraint firstItem="wNh-f9-kl7" firstAttribute="trailing" secondItem="3IQ-tP-e6n" secondAttribute="trailing" id="aHc-UA-g9t"/>
+                            <constraint firstItem="wNh-f9-kl7" firstAttribute="top" secondItem="elP-NM-HyG" secondAttribute="bottom" constant="10" id="fUU-sP-N0t"/>
+                            <constraint firstItem="wNh-f9-kl7" firstAttribute="bottom" secondItem="3IQ-tP-e6n" secondAttribute="bottom" id="jwi-UL-aMD"/>
+                            <constraint firstItem="3IQ-tP-e6n" firstAttribute="trailing" secondItem="elP-NM-HyG" secondAttribute="trailing" constant="20" id="uFt-hF-Gnx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3IQ-tP-e6n"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Payment Methods" id="M7l-ay-WnW">
+                        <barButtonItem key="backBarButtonItem" title=" " id="nek-cJ-xzO"/>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="paymentMethodsTV" destination="wNh-f9-kl7" id="IjP-S6-fnv"/>
+                        <outlet property="selectMessageLabel" destination="elP-NM-HyG" id="xWY-gP-bRE"/>
+                        <segue destination="L17-EA-Kr1" kind="show" identifier="SegueCardIssuers" id="lf8-Ng-guG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="02p-jr-woQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="125.59999999999999" y="180.35982008995504"/>
+        </scene>
+        <!--CardIssuersVC-->
+        <scene sceneID="0ou-zX-1Sa">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CardIssuers" referencedIdentifier="CardIssuersVC" id="L17-EA-Kr1" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TCo-9Q-sKU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="668" y="180"/>
+        </scene>
+    </scenes>
+</document>

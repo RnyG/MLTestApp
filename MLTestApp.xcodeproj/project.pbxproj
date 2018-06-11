@@ -8,24 +8,105 @@
 
 /* Begin PBXBuildFile section */
 		2E7693AE20CCB8E80079663D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E7693AD20CCB8E80079663D /* AppDelegate.m */; };
-		2E7693B120CCB8E80079663D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E7693B020CCB8E80079663D /* ViewController.m */; };
 		2E7693B420CCB8E80079663D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E7693B220CCB8E80079663D /* Main.storyboard */; };
 		2E7693B620CCB8ED0079663D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E7693B520CCB8ED0079663D /* Assets.xcassets */; };
 		2E7693B920CCB8ED0079663D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E7693B720CCB8ED0079663D /* LaunchScreen.storyboard */; };
 		2E7693BC20CCB8ED0079663D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E7693BB20CCB8ED0079663D /* main.m */; };
+		2E7693C620CCCD5C0079663D /* PaymentMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E7693C520CCCD5C0079663D /* PaymentMethod.m */; };
+		2E7693C920CCD4F40079663D /* CardIssuer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E7693C820CCD4F40079663D /* CardIssuer.m */; };
+		2E7693CC20CCD6B80079663D /* Installments.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E7693CB20CCD6B80079663D /* Installments.m */; };
+		2E7693CF20CCDA120079663D /* InstallmentsDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E7693CE20CCDA120079663D /* InstallmentsDetails.m */; };
+		2E7693D220CCDB470079663D /* FinancialInstitution.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E7693D120CCDB470079663D /* FinancialInstitution.m */; };
+		2E7693D620CCDC7A0079663D /* Settings.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E7693D520CCDC7A0079663D /* Settings.m */; };
+		2E7693D920CCDC900079663D /* SecurityCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E7693D820CCDC900079663D /* SecurityCode.m */; };
+		2E7693DC20CCDC9C0079663D /* CardNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E7693DB20CCDC9C0079663D /* CardNumber.m */; };
+		2E7693DF20CCDCA90079663D /* Bin.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E7693DE20CCDCA90079663D /* Bin.m */; };
+		2E7693E620CCDFC10079663D /* AmountVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E7693E520CCDFC10079663D /* AmountVC.m */; };
+		2E7693EA20CCF3C10079663D /* Network.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E7693E920CCF3C10079663D /* Network.m */; };
+		2E7693ED20CCF62C0079663D /* PaymentNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E7693EC20CCF62C0079663D /* PaymentNetwork.m */; };
+		2E7693EF20CD61580079663D /* CardIssuers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E7693EE20CD61580079663D /* CardIssuers.storyboard */; };
+		2E7693F120CD61DB0079663D /* PaymentMethods.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E7693F020CD61DB0079663D /* PaymentMethods.storyboard */; };
+		2E7693F420CD64010079663D /* PaymentMethodsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E7693F320CD64010079663D /* PaymentMethodsVC.m */; };
+		2E7693F820CDBD120079663D /* PaymentMethodsVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E7693F720CDBD120079663D /* PaymentMethodsVM.m */; };
+		2E7693FB20CE1B0C0079663D /* AmountVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E7693FA20CE1B0C0079663D /* AmountVM.m */; };
+		2E7693FE20CE39AB0079663D /* CardIssuersVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E7693FD20CE39AB0079663D /* CardIssuersVM.m */; };
+		2E76940120CE39C90079663D /* CardIssuersVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E76940020CE39C90079663D /* CardIssuersVC.m */; };
+		2E76940420CE3C810079663D /* CardIssuerNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E76940320CE3C810079663D /* CardIssuerNetwork.m */; };
+		2E76940720CE3E250079663D /* InstallmentsNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E76940620CE3E250079663D /* InstallmentsNetwork.m */; };
+		2E76940920CE4EB40079663D /* Installments.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E76940820CE4EB40079663D /* Installments.storyboard */; };
+		2E76940C20CE52E20079663D /* InstallmentsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E76940B20CE52E20079663D /* InstallmentsVC.m */; };
+		2E76940F20CE52F70079663D /* InstallmentsVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E76940E20CE52F70079663D /* InstallmentsVM.m */; };
+		2E76941220CE7C620079663D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2E76941420CE7C620079663D /* Localizable.strings */; };
+		2E76941D20CEC4980079663D /* Amount.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E76941F20CEC4980079663D /* Amount.storyboard */; };
+		EB692821813D26D92049142E /* libPods-MLTestApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F3FB5899A57DD8FF0BBC0E5D /* libPods-MLTestApp.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2E7693A920CCB8E80079663D /* MLTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MLTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E7693AC20CCB8E80079663D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2E7693AD20CCB8E80079663D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		2E7693AF20CCB8E80079663D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		2E7693B020CCB8E80079663D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		2E7693B320CCB8E80079663D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2E7693B520CCB8ED0079663D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E7693B820CCB8ED0079663D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2E7693BA20CCB8ED0079663D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E7693BB20CCB8ED0079663D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2E7693C420CCCD5C0079663D /* PaymentMethod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaymentMethod.h; sourceTree = "<group>"; };
+		2E7693C520CCCD5C0079663D /* PaymentMethod.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaymentMethod.m; sourceTree = "<group>"; };
+		2E7693C720CCD4F40079663D /* CardIssuer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CardIssuer.h; sourceTree = "<group>"; };
+		2E7693C820CCD4F40079663D /* CardIssuer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardIssuer.m; sourceTree = "<group>"; };
+		2E7693CA20CCD6B80079663D /* Installments.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Installments.h; sourceTree = "<group>"; };
+		2E7693CB20CCD6B80079663D /* Installments.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Installments.m; sourceTree = "<group>"; };
+		2E7693CD20CCDA120079663D /* InstallmentsDetails.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InstallmentsDetails.h; sourceTree = "<group>"; };
+		2E7693CE20CCDA120079663D /* InstallmentsDetails.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InstallmentsDetails.m; sourceTree = "<group>"; };
+		2E7693D020CCDB470079663D /* FinancialInstitution.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FinancialInstitution.h; sourceTree = "<group>"; };
+		2E7693D120CCDB470079663D /* FinancialInstitution.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FinancialInstitution.m; sourceTree = "<group>"; };
+		2E7693D420CCDC7A0079663D /* Settings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Settings.h; sourceTree = "<group>"; };
+		2E7693D520CCDC7A0079663D /* Settings.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Settings.m; sourceTree = "<group>"; };
+		2E7693D720CCDC900079663D /* SecurityCode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecurityCode.h; sourceTree = "<group>"; };
+		2E7693D820CCDC900079663D /* SecurityCode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecurityCode.m; sourceTree = "<group>"; };
+		2E7693DA20CCDC9C0079663D /* CardNumber.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CardNumber.h; sourceTree = "<group>"; };
+		2E7693DB20CCDC9C0079663D /* CardNumber.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardNumber.m; sourceTree = "<group>"; };
+		2E7693DD20CCDCA90079663D /* Bin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bin.h; sourceTree = "<group>"; };
+		2E7693DE20CCDCA90079663D /* Bin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Bin.m; sourceTree = "<group>"; };
+		2E7693E420CCDFC10079663D /* AmountVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AmountVC.h; sourceTree = "<group>"; };
+		2E7693E520CCDFC10079663D /* AmountVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AmountVC.m; sourceTree = "<group>"; };
+		2E7693E820CCF3C10079663D /* Network.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Network.h; sourceTree = "<group>"; };
+		2E7693E920CCF3C10079663D /* Network.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Network.m; sourceTree = "<group>"; };
+		2E7693EB20CCF62C0079663D /* PaymentNetwork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaymentNetwork.h; sourceTree = "<group>"; };
+		2E7693EC20CCF62C0079663D /* PaymentNetwork.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaymentNetwork.m; sourceTree = "<group>"; };
+		2E7693EE20CD61580079663D /* CardIssuers.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CardIssuers.storyboard; sourceTree = "<group>"; };
+		2E7693F020CD61DB0079663D /* PaymentMethods.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PaymentMethods.storyboard; sourceTree = "<group>"; };
+		2E7693F220CD64010079663D /* PaymentMethodsVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaymentMethodsVC.h; sourceTree = "<group>"; };
+		2E7693F320CD64010079663D /* PaymentMethodsVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaymentMethodsVC.m; sourceTree = "<group>"; };
+		2E7693F620CDBD120079663D /* PaymentMethodsVM.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaymentMethodsVM.h; sourceTree = "<group>"; };
+		2E7693F720CDBD120079663D /* PaymentMethodsVM.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaymentMethodsVM.m; sourceTree = "<group>"; };
+		2E7693F920CE1B0C0079663D /* AmountVM.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AmountVM.h; sourceTree = "<group>"; };
+		2E7693FA20CE1B0C0079663D /* AmountVM.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AmountVM.m; sourceTree = "<group>"; };
+		2E7693FC20CE39AB0079663D /* CardIssuersVM.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CardIssuersVM.h; sourceTree = "<group>"; };
+		2E7693FD20CE39AB0079663D /* CardIssuersVM.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardIssuersVM.m; sourceTree = "<group>"; };
+		2E7693FF20CE39C90079663D /* CardIssuersVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CardIssuersVC.h; sourceTree = "<group>"; };
+		2E76940020CE39C90079663D /* CardIssuersVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardIssuersVC.m; sourceTree = "<group>"; };
+		2E76940220CE3C810079663D /* CardIssuerNetwork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CardIssuerNetwork.h; sourceTree = "<group>"; };
+		2E76940320CE3C810079663D /* CardIssuerNetwork.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardIssuerNetwork.m; sourceTree = "<group>"; };
+		2E76940520CE3E250079663D /* InstallmentsNetwork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InstallmentsNetwork.h; sourceTree = "<group>"; };
+		2E76940620CE3E250079663D /* InstallmentsNetwork.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InstallmentsNetwork.m; sourceTree = "<group>"; };
+		2E76940820CE4EB40079663D /* Installments.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Installments.storyboard; sourceTree = "<group>"; };
+		2E76940A20CE52E20079663D /* InstallmentsVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InstallmentsVC.h; sourceTree = "<group>"; };
+		2E76940B20CE52E20079663D /* InstallmentsVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InstallmentsVC.m; sourceTree = "<group>"; };
+		2E76940D20CE52F70079663D /* InstallmentsVM.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InstallmentsVM.h; sourceTree = "<group>"; };
+		2E76940E20CE52F70079663D /* InstallmentsVM.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InstallmentsVM.m; sourceTree = "<group>"; };
+		2E76941320CE7C620079663D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2E76941520CE7C690079663D /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2E76941720CE7FCF0079663D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		2E76941A20CEB6420079663D /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
+		2E76941B20CEB6430079663D /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		2E76941C20CEB6430079663D /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2E76941E20CEC4980079663D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Amount.storyboard; sourceTree = "<group>"; };
+		2E76942120CEC4A00079663D /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Amount.strings; sourceTree = "<group>"; };
+		2E76942220CEC4FB0079663D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Amount.storyboard; sourceTree = "<group>"; };
+		75433D0F3A486C843EA6AE40 /* Pods-MLTestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MLTestApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-MLTestApp/Pods-MLTestApp.release.xcconfig"; sourceTree = "<group>"; };
+		84AAA8FF602D96EC3D2EE1E3 /* Pods-MLTestApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MLTestApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MLTestApp/Pods-MLTestApp.debug.xcconfig"; sourceTree = "<group>"; };
+		F3FB5899A57DD8FF0BBC0E5D /* libPods-MLTestApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MLTestApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +114,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB692821813D26D92049142E /* libPods-MLTestApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1DADCC703CD708D93797CDF0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F3FB5899A57DD8FF0BBC0E5D /* libPods-MLTestApp.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2E7693A020CCB8E80079663D = {
 			isa = PBXGroup;
 			children = (
 				2E7693AB20CCB8E80079663D /* MLTestApp */,
 				2E7693AA20CCB8E80079663D /* Products */,
+				A2CCFB03FA1B6CF0C333AD8F /* Pods */,
+				1DADCC703CD708D93797CDF0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,15 +152,117 @@
 			children = (
 				2E7693AC20CCB8E80079663D /* AppDelegate.h */,
 				2E7693AD20CCB8E80079663D /* AppDelegate.m */,
-				2E7693AF20CCB8E80079663D /* ViewController.h */,
-				2E7693B020CCB8E80079663D /* ViewController.m */,
-				2E7693B220CCB8E80079663D /* Main.storyboard */,
+				2E7693C220CCBC0C0079663D /* Models */,
+				2E7693C320CCBC160079663D /* Views */,
+				2E7693F520CDBC660079663D /* ViewModel */,
 				2E7693B520CCB8ED0079663D /* Assets.xcassets */,
 				2E7693B720CCB8ED0079663D /* LaunchScreen.storyboard */,
 				2E7693BA20CCB8ED0079663D /* Info.plist */,
 				2E7693BB20CCB8ED0079663D /* main.m */,
+				2E76941420CE7C620079663D /* Localizable.strings */,
 			);
 			path = MLTestApp;
+			sourceTree = "<group>";
+		};
+		2E7693C220CCBC0C0079663D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2E7693E720CCF39D0079663D /* Network */,
+				2E7693C420CCCD5C0079663D /* PaymentMethod.h */,
+				2E7693C520CCCD5C0079663D /* PaymentMethod.m */,
+				2E7693D420CCDC7A0079663D /* Settings.h */,
+				2E7693D520CCDC7A0079663D /* Settings.m */,
+				2E7693D720CCDC900079663D /* SecurityCode.h */,
+				2E7693D820CCDC900079663D /* SecurityCode.m */,
+				2E7693DA20CCDC9C0079663D /* CardNumber.h */,
+				2E7693DB20CCDC9C0079663D /* CardNumber.m */,
+				2E7693DD20CCDCA90079663D /* Bin.h */,
+				2E7693DE20CCDCA90079663D /* Bin.m */,
+				2E7693D020CCDB470079663D /* FinancialInstitution.h */,
+				2E7693D120CCDB470079663D /* FinancialInstitution.m */,
+				2E7693C720CCD4F40079663D /* CardIssuer.h */,
+				2E7693C820CCD4F40079663D /* CardIssuer.m */,
+				2E7693CA20CCD6B80079663D /* Installments.h */,
+				2E7693CB20CCD6B80079663D /* Installments.m */,
+				2E7693CD20CCDA120079663D /* InstallmentsDetails.h */,
+				2E7693CE20CCDA120079663D /* InstallmentsDetails.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2E7693C320CCBC160079663D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2E7693E020CCDED50079663D /* Storyboards */,
+				2E7693E120CCDEE70079663D /* Controllers */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2E7693E020CCDED50079663D /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				2E7693B220CCB8E80079663D /* Main.storyboard */,
+				2E76941F20CEC4980079663D /* Amount.storyboard */,
+				2E7693F020CD61DB0079663D /* PaymentMethods.storyboard */,
+				2E7693EE20CD61580079663D /* CardIssuers.storyboard */,
+				2E76940820CE4EB40079663D /* Installments.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		2E7693E120CCDEE70079663D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2E7693E420CCDFC10079663D /* AmountVC.h */,
+				2E7693E520CCDFC10079663D /* AmountVC.m */,
+				2E7693F220CD64010079663D /* PaymentMethodsVC.h */,
+				2E7693F320CD64010079663D /* PaymentMethodsVC.m */,
+				2E7693FF20CE39C90079663D /* CardIssuersVC.h */,
+				2E76940020CE39C90079663D /* CardIssuersVC.m */,
+				2E76940A20CE52E20079663D /* InstallmentsVC.h */,
+				2E76940B20CE52E20079663D /* InstallmentsVC.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2E7693E720CCF39D0079663D /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				2E7693E820CCF3C10079663D /* Network.h */,
+				2E7693E920CCF3C10079663D /* Network.m */,
+				2E7693EB20CCF62C0079663D /* PaymentNetwork.h */,
+				2E7693EC20CCF62C0079663D /* PaymentNetwork.m */,
+				2E76940220CE3C810079663D /* CardIssuerNetwork.h */,
+				2E76940320CE3C810079663D /* CardIssuerNetwork.m */,
+				2E76940520CE3E250079663D /* InstallmentsNetwork.h */,
+				2E76940620CE3E250079663D /* InstallmentsNetwork.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		2E7693F520CDBC660079663D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2E7693F920CE1B0C0079663D /* AmountVM.h */,
+				2E7693FA20CE1B0C0079663D /* AmountVM.m */,
+				2E7693F620CDBD120079663D /* PaymentMethodsVM.h */,
+				2E7693F720CDBD120079663D /* PaymentMethodsVM.m */,
+				2E7693FC20CE39AB0079663D /* CardIssuersVM.h */,
+				2E7693FD20CE39AB0079663D /* CardIssuersVM.m */,
+				2E76940D20CE52F70079663D /* InstallmentsVM.h */,
+				2E76940E20CE52F70079663D /* InstallmentsVM.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A2CCFB03FA1B6CF0C333AD8F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				84AAA8FF602D96EC3D2EE1E3 /* Pods-MLTestApp.debug.xcconfig */,
+				75433D0F3A486C843EA6AE40 /* Pods-MLTestApp.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -78,9 +272,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2E7693BF20CCB8ED0079663D /* Build configuration list for PBXNativeTarget "MLTestApp" */;
 			buildPhases = (
+				9F1E833A58EA6810A375CD9C /* [CP] Check Pods Manifest.lock */,
 				2E7693A520CCB8E80079663D /* Sources */,
 				2E7693A620CCB8E80079663D /* Frameworks */,
 				2E7693A720CCB8E80079663D /* Resources */,
+				273D26548A8B3D09EE119EDC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -112,6 +308,7 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = 2E7693A020CCB8E80079663D;
 			productRefGroup = 2E7693AA20CCB8E80079663D /* Products */;
@@ -128,7 +325,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E7693EF20CD61580079663D /* CardIssuers.storyboard in Resources */,
+				2E76941D20CEC4980079663D /* Amount.storyboard in Resources */,
+				2E7693F120CD61DB0079663D /* PaymentMethods.storyboard in Resources */,
+				2E76940920CE4EB40079663D /* Installments.storyboard in Resources */,
 				2E7693B920CCB8ED0079663D /* LaunchScreen.storyboard in Resources */,
+				2E76941220CE7C620079663D /* Localizable.strings in Resources */,
 				2E7693B620CCB8ED0079663D /* Assets.xcassets in Resources */,
 				2E7693B420CCB8E80079663D /* Main.storyboard in Resources */,
 			);
@@ -136,13 +338,72 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		273D26548A8B3D09EE119EDC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MLTestApp/Pods-MLTestApp-resources.sh",
+				"${PODS_ROOT}/ProgressHUD/ProgressHUD/ProgressHUD/ProgressHUD.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ProgressHUD.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MLTestApp/Pods-MLTestApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F1E833A58EA6810A375CD9C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MLTestApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2E7693A520CCB8E80079663D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E7693B120CCB8E80079663D /* ViewController.m in Sources */,
+				2E76940420CE3C810079663D /* CardIssuerNetwork.m in Sources */,
+				2E7693DC20CCDC9C0079663D /* CardNumber.m in Sources */,
+				2E7693C620CCCD5C0079663D /* PaymentMethod.m in Sources */,
+				2E76940F20CE52F70079663D /* InstallmentsVM.m in Sources */,
+				2E7693D620CCDC7A0079663D /* Settings.m in Sources */,
 				2E7693BC20CCB8ED0079663D /* main.m in Sources */,
+				2E7693FE20CE39AB0079663D /* CardIssuersVM.m in Sources */,
+				2E7693CF20CCDA120079663D /* InstallmentsDetails.m in Sources */,
+				2E76940120CE39C90079663D /* CardIssuersVC.m in Sources */,
+				2E7693ED20CCF62C0079663D /* PaymentNetwork.m in Sources */,
+				2E7693D220CCDB470079663D /* FinancialInstitution.m in Sources */,
+				2E76940C20CE52E20079663D /* InstallmentsVC.m in Sources */,
+				2E7693F420CD64010079663D /* PaymentMethodsVC.m in Sources */,
+				2E76940720CE3E250079663D /* InstallmentsNetwork.m in Sources */,
+				2E7693CC20CCD6B80079663D /* Installments.m in Sources */,
+				2E7693FB20CE1B0C0079663D /* AmountVM.m in Sources */,
+				2E7693F820CDBD120079663D /* PaymentMethodsVM.m in Sources */,
+				2E7693E620CCDFC10079663D /* AmountVC.m in Sources */,
+				2E7693C920CCD4F40079663D /* CardIssuer.m in Sources */,
+				2E7693DF20CCDCA90079663D /* Bin.m in Sources */,
+				2E7693D920CCDC900079663D /* SecurityCode.m in Sources */,
+				2E7693EA20CCF3C10079663D /* Network.m in Sources */,
 				2E7693AE20CCB8E80079663D /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -154,6 +415,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				2E7693B320CCB8E80079663D /* Base */,
+				2E76941A20CEB6420079663D /* es */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -162,8 +424,30 @@
 			isa = PBXVariantGroup;
 			children = (
 				2E7693B820CCB8ED0079663D /* Base */,
+				2E76941720CE7FCF0079663D /* en */,
+				2E76941B20CEB6430079663D /* es */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		2E76941420CE7C620079663D /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E76941320CE7C620079663D /* en */,
+				2E76941520CE7C690079663D /* Base */,
+				2E76941C20CEB6430079663D /* es */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		2E76941F20CEC4980079663D /* Amount.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E76941E20CEC4980079663D /* en */,
+				2E76942120CEC4A00079663D /* es */,
+				2E76942220CEC4FB0079663D /* Base */,
+			);
+			name = Amount.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -173,6 +457,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -231,6 +516,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -281,6 +567,7 @@
 		};
 		2E7693C020CCB8ED0079663D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84AAA8FF602D96EC3D2EE1E3 /* Pods-MLTestApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +585,7 @@
 		};
 		2E7693C120CCB8ED0079663D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75433D0F3A486C843EA6AE40 /* Pods-MLTestApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

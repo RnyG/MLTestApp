@@ -1,0 +1,9 @@
+
+/* Class = "UIBarButtonItem"; title = " "; ObjectID = "g1T-aI-HE8"; */
+"g1T-aI-HE8.title" = " ";
+
+/* Class = "UINavigationItem"; title = "Amount"; ObjectID = "kKJ-IN-JgT"; */
+"kKJ-IN-JgT.title" = "Monto";
+
+/* Class = "UIBarButtonItem"; title = "Continue"; ObjectID = "pMw-T3-1Iy"; */
+"pMw-T3-1Iy.title" = "Continuar";
